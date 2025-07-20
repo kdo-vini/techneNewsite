@@ -145,7 +145,7 @@ header .container {
 }
 
 /* Navegação - Oculta no mobile */
-nav {
+header nav {
     display: none;
 }
 
@@ -298,7 +298,7 @@ section {
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem; /* aumenta o espaço abaixo do título */
+    margin-bottom: 1rem; /* aumenta o espaço abaixo do título */
 }
 
 .section-header h2 {
@@ -347,28 +347,6 @@ section {
     margin-top: 15%; /* Isso cria um espaço de 16px acima do parágrafo, empurrando-o para baixo. */
 }
 
-.solution-icon {
-    width: 60px;
-    height: 60px;
-    background-color: var(--cor-primaria); /* azul */
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-
-.solution-icon img {
-    width: 32px;
-    height: 32px;
-    filter: brightness(0) invert(1);
-}
-
-.solution-card header {
-    margin-bottom: 1rem;
-}
-
 /* ========== SEÇÃO SOBRE ========== */
 .about-section {
     background: linear-gradient(135deg, var(--cor-fundo) 0%, rgba(31, 41, 55, 0.8) 100%);
@@ -397,13 +375,19 @@ section {
     background-color: var(--cor-fundo-secundario);
     text-align: center;
 }
-
 .contact-actions {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem; 
+}
+
+/* Regra especial para telas menores (mobile) */
+@media (max-width: 768px) {
+    .contact-actions {
+        margin-top: 12rem; /* Este valor será usado em celulares */
+    }
 }
 
 /* ========== RODAPÉ ========== */
@@ -471,14 +455,14 @@ footer {
     color: var(--cor-secundaria);
 }
 
-/* ========== RESPONSIVIDADE - DESKTOP ========== */
+/* ========== RESPONSIVIDADE - CELULARES ========== */
 @media (min-width: 768px) {
     /* Cabeçalho Desktop */
     .mobile-menu-toggle {
         display: none;
     }
 
-    nav {
+    header nav {
         display: block !important;
     }
 
@@ -626,6 +610,14 @@ header.scrolled {
     background-color: var(--cor-fundo);
     padding: 3rem;
     border-radius: var(--border-radius);
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-wrapper {
+        margin-top: 8rem;
+    }
+    
 }
 
 .contact-form .form-group {

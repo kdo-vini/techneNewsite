@@ -95,6 +95,7 @@ const initPriceToggle = () => {
 };
 
 
+
     // Inicializa todas as funções
     initPilotTabs();
     initScrollReveal();
