@@ -1,0 +1,122 @@
+/* Importando as variáveis e estilos base do seu site principal */
+@import url('servicos.css'); /* Ou o nome do seu arquivo CSS principal */
+
+/* ========== ESTILOS ESPECÍFICOS DA PÁGINA "SOBRE" ========== */
+
+/* SEÇÃO HERÓI */
+.hero-section {
+    padding: 6rem 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--cor-fundo) 0%, var(--cor-fundo-secundario) 100%);
+}
+.hero-content h1 { font-size: 3rem; line-height: 1.2; }
+.hero-description { max-width: 600px; margin: 1.5rem auto 0; font-size: 1.1rem; color: var(--cor-texto-secundario); }
+
+/* SEÇÃO DA HISTÓRIA */
+.story-section {
+    padding: 6rem 0;
+}
+.story-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.founder-visual {
+    position: sticky;
+    top: 120px; /* Leva em conta a altura do header fixo */
+}
+
+.image-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Garante que seja um quadrado perfeito */
+    background-color: var(--cor-fundo-secundario);
+    border-radius: var(--border-radius);
+    border: 2px dashed var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.image-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.founder-visual img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.story-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--cor-texto-secundario);
+}
+.story-text strong {
+    color: var(--cor-primaria);
+}
+
+.quote {
+    border-left: 4px solid var(--cor-primaria);
+    padding-left: 2rem;
+    margin: 2rem 0;
+}
+.quote p {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--cor-texto-principal);
+    font-weight: 500;
+}
+
+/* SEÇÃO MISSÃO */
+.mission-section {
+    padding: 6rem 0;
+    background-color: var(--cor-fundo-secundario);
+}
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mission-content i {
+    font-size: 3rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
+}
+.mission-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.mission-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--cor-texto-secundario);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 992px) {
+    .story-container {
+        grid-template-columns: 1fr;
+    }
+    .founder-visual {
+        position: static; /* Remove o efeito "sticky" em telas menores */
+        max-width: 400px;
+        margin: 0 auto 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .story-text h2 { font-size: 2rem; }
+}

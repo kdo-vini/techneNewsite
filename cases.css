@@ -1,0 +1,132 @@
+/* Importando as variáveis e estilos base */
+@import url('servicos.css'); /* Ou o nome do seu arquivo CSS principal */
+
+/* ========== ESTILOS ESPECÍFICOS DA PÁGINA "CASES" ========== */
+
+/* SEÇÃO HERÓI */
+.hero-section {
+    padding: 6rem 0;
+    text-align: center;
+    background: linear-gradient(180deg, var(--cor-fundo) 0%, var(--cor-fundo-secundario) 100%);
+}
+.hero-content h1 { font-size: 3rem; line-height: 1.2; }
+.hero-description { max-width: 700px; margin: 1.5rem auto 0; font-size: 1.1rem; color: var(--cor-texto-secundario); }
+
+/* CASE PRINCIPAL */
+.case-study-section {
+    padding: 6rem 0;
+}
+.case-study {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--cor-fundo-secundario);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+}
+
+.case-study-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.case-category {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.case-study-header h2 {
+    font-size: 2.2rem;
+}
+
+.case-step {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 50px; /* Espaço para a linha e ícone */
+    margin-bottom: 2rem;
+}
+
+/* Linha vertical conectando os passos */
+.case-step:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 21px; /* Centralizado com o ícone */
+    top: 50px;
+    bottom: -2rem; /* Conecta com o próximo passo */
+    width: 2px;
+    background-color: var(--cor-fundo-terciario);
+}
+
+.step-icon {
+    background-color: var(--cor-fundo-terciario);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.step-icon i {
+    font-size: 1.8rem;
+    color: var(--cor-primaria);
+}
+
+.step-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.step-text p {
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+}
+
+/* SEÇÃO SERVIÇOS ESSENCIAIS */
+.other-services-section {
+    padding: 6rem 0;
+    background-color: var(--cor-fundo);
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: var(--cor-fundo-secundario);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.service-card i {
+    font-size: 2.5rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+.service-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.service-card p {
+    font-size: 0.95rem;
+    color: var(--cor-texto-secundario);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .case-study { padding: 2rem; }
+    .case-study-header h2 { font-size: 1.8rem; }
+}

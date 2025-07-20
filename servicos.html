@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça as soluções da Téchne: da plataforma de atendimento com IA, Pilot, aos planos de suporte técnico especializado.">
+    <title>Téchne - Nossas Soluções de Tecnologia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="servicos.css">
+    <script src="servicos.js"></script>
+</head>
+<body>
+    <header role="banner">
+    <div class="container">
+        <div class="logo">
+                <a href="index.html" aria-label="Téchne - Página Inicial" style="display: flex; align-items: center; gap: 8px;">
+                    <img src="media/logo-techne.png" alt="Téchne" width="120" height="40">
+                    <span style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem; color: #ffffff;">Téchne</span>
+                </a>
+            </div>
+
+        <nav role="navigation" aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#pilot">Pilot</a></li>
+                <li><a href="#suporte">Suporte</a></li>
+                <li><a href="#planos">Planos</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-cta">
+            <a href="https://app.techneia.com.br/" target="_blank" rel="noopener" class="btn btn-primary" role="button">Confira Grátis</a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+    </header>
+    <main role="main">
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Tecnologia que Resolve. Soluções que Impulsionam.</h1>
+                    <p class="hero-description">
+                        Explore nossas soluções de ponta, desde a automação inteligente do atendimento com o Pilot até o suporte técnico que garante a estabilidade do seu negócio.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#pilot" class="btn btn-primary">Conhecer o Pilot</a>
+                        <a href="#suporte" class="btn btn-secondary">Ver Planos de Suporte</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pilot" class="pilot-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Pilot: Gestão de Clientes com IA</h2>
+                    <p>Simples, eficiente e totalmente integrado. Veja como o Pilot transforma seu atendimento em 6 passos.</p>
+                </header>
+
+                <div class="pilot-tabs">
+                    <div class="tab-nav">
+                        <button class="tab-link active" data-tab="tab-1"><i class='bx bx-plug'></i> 1. Integração</button>
+                        <button class="tab-link" data-tab="tab-2"><i class='bx bx-bot'></i> 2. Respostas IA</button>
+                        <button class="tab-link" data-tab="tab-3"><i class='bx bx-purchase-tag-alt'></i> 3. Organização</button>
+                        <button class="tab-link" data-tab="tab-4"><i class='bx bx-calendar-check'></i> 4. Agendamentos</button>
+                        <button class="tab-link" data-tab="tab-5"><i class='bx bx-expand-alt'></i> 5. Escalabilidade</button>
+                        <button class="tab-link" data-tab="tab-6"><i class='bx bx-line-chart'></i> 6. Análises</button>
+                    </div>
+
+                    <div class="tab-content-wrapper">
+                        <div id="tab-1" class="tab-content active">
+                            <img src="media/Integracao.png" alt="Integração com WhatsApp, Instagram e Facebook">
+                            <div>
+                                <h3>Integração com Seus Canais</h3>
+                                <p>Nossa IA conecta-se diretamente ao WhatsApp, Instagram e Facebook de forma oficial, centralizando todas as mensagens em um único painel para um gerenciamento prático e eficiente de cada interação.</p>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-content">
+                            <img src="media/chatinteracao.png" alt="Chatbot com respostas inteligentes">
+                            <div>
+                                <h3>Respostas Inteligentes e Humanizadas</h3>
+                                <p>Com tecnologia GPT-4, a IA da Téchne entende e responde mensagens com precisão, adaptando o tom e transcrevendo áudios automaticamente para otimizar o tempo de resposta.</p>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-content">
+                            <img src="media/cards.png" alt="Organização de conversas com tags">
+                            <div>
+                                <h3>Organização Automatizada</h3>
+                                <p>O sistema aplica tags automáticas a cada interação, categorizando mensagens por prioridade, tipo de solicitação ou setor. Isso facilita o acompanhamento e a personalização do atendimento.</p>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-content">
+                            <img src="media/calendar.png" alt="Agendamento integrado com Google Calendar">
+                            <div>
+                                <h3>Agendamento de Consultas e Serviços</h3>
+                                <p>Nossa IA realiza agendamentos diretamente com o cliente através do Google Calendar e também pode realizar disparos de mensagens em massa e agendadas para clientes.</p>
+                            </div>
+                        </div>
+                         <div id="tab-5" class="tab-content">
+                            <img src="media/24-7.png" alt="Atendimento híbrido e flexível">
+                            <div>
+                                <h3>Escalabilidade e Flexibilidade</h3>
+                                <p>Com a possibilidade de combinar atendimento automático, semiautomático e manual, a Téchne IA adapta-se às necessidades do seu negócio, garantindo que a experiência do cliente seja sempre positiva - 24/7.</p>
+                            </div>
+                        </div>
+                        <div id="tab-6" class="tab-content">
+                            <img src="media/nps.png" alt="Dashboard com relatórios e NPS">
+                            <div>
+                                <h3>Monitoramento e Análises em Tempo Real</h3>
+                                <p>A Téchne monitora a velocidade de resposta e identifica o nível de satisfação do cliente. Relatórios detalhados de NPS ajudam a melhorar continuamente o atendimento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="section-cta">
+                    <a href="https://app.techneia.com.br/" class="btn btn-primary">Teste Grátis por 7 Dias</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="pilot-planos" class="pilot-plans-section">
+    <div class="container">
+        <header class="section-header">
+            <h2>Escolha o Plano Pilot Ideal para Você</h2>
+            <p>Comece a transformar seu atendimento com o plano que melhor se adapta ao seu crescimento.</p>
+        </header>
+
+        <div class="plans-toggle">
+            <span>Ciclo Mensal</span>
+            <label class="switch">
+                <input type="checkbox" id="price-toggle">
+                <span class="slider round"></span>
+            </label>
+            <span>Ciclo Anual (Economize 10%)</span>
+        </div>
+
+        <div class="plans-grid">
+    <div class="plan-card">
+        <div class="plan-header">
+            <h3>Base</h3>
+        </div>
+        <div class="plan-price" id="price-base">R$ 249,00 <span class="price-period">/mês</span></div>
+        <div class="plan-details">
+            <p>O ponto de partida ideal para organizar seu atendimento com ferramentas essenciais de automação.</p>
+        </div>
+        <ul class="plan-features">
+            <li><i class='bx bx-check-shield'></i> Até 1 Atendente</li>
+            <li><i class='bx bx-check'></i> Permite Kanban</li>
+            <li><i class='bx bx-check'></i> Acesso a Relatórios</li>
+            <li><i class='bx bx-check'></i> Disparo em Massa</li>
+            <li><i class='bx bx-check'></i> Respostas Rápidas</li>
+            <li><i class='bx bx-check'></i> Agendamento de mensagem</li>
+        </ul>
+        <a href="https://app.techneia.com.br/" class="btn btn-secondary">Escolher</a>
+    </div>
+
+    <div class="plan-card featured">
+        <div class="featured-badge">Mais Popular</div>
+        <div class="plan-header">
+            <h3>Profissional</h3>
+        </div>
+        <div class="plan-price" id="price-profissional">R$ 399,00 <span class="price-period">/mês</span></div>
+        <div class="plan-details">
+            <p>Projetado para empresas em crescimento que buscam mais integração com suas ferramentas de produtividade.</p>
+        </div>
+        <ul class="plan-features">
+            <li><i class='bx bx-check-shield'></i> Até 5 Atendentes</li>
+            <li class="feature-plus"><i class='bx bx-plus-circle'></i> Tudo do plano Base, e mais:</li>
+            <li><i class='bx bx-check'></i> Importação de Contatos</li>
+            <li><i class='bx bx-check'></i> Integração com Google Agenda</li>
+            <li><i class='bx bx-check'></i> Integração com Calendly</li>
+        </ul>
+        <a href="https://app.techneia.com.br/" class="btn btn-primary">Escolher</a>
+    </div>
+
+    <div class="plan-card">
+        <div class="plan-header">
+            <h3>Premium</h3>
+        </div>
+        <div class="plan-price" id="price-premium">R$ 799,00 <span class="price-period">/mês</span></div>
+        <div class="plan-details">
+            <p>A solução completa para automação total, com acesso a ferramentas avançadas para integrações personalizadas.</p>
+        </div>
+        <ul class="plan-features">
+            <li><i class='bx bx-check-shield'></i> Até 10 Atendentes</li>
+            <li class="feature-plus"><i class='bx bx-plus-circle'></i> Tudo do plano Profissional, e mais:</li>
+            <li><i class='bx bx-check'></i> Acesso à API</li>
+            <li><i class='bx bx-check'></i> Permite Webhook</li>
+            <li><i class='bx bx-check'></i> Distribuição Dinâmica</li>
+            <li><i class='bx bx-check'></i> Base de Conhecimento</li>
+        </ul>
+        <a href="https://app.techneia.com.br/" class="btn btn-secondary">Escolher</a>
+    </div>
+
+    <div class="plan-card">
+        <div class="plan-header">
+            <h3>Elite</h3>
+        </div>
+        <div class="plan-price" id="price-elite">R$ 1.990,00 <span class="price-period">/mês</span></div>
+         <div class="plan-details">
+            <p>Mais que um software, uma parceria tecnológica com suporte especializado da nossa equipe.</p>
+        </div>
+        <ul class="plan-features">
+            <li><i class='bx bxs-crown'></i> Atendentes Ilimitados</li>
+            <li class="feature-plus"><i class='bx bxs-star'></i> Tudo do plano Premium, e mais:</li>
+            <li><i class='bx bx-check'></i> <strong>Téchne Desk Incluso<br>(Suporte Técnico)</strong></li>
+            <li><i class='bx bx-check'></i> Acesso prioritário à API</li>
+            <li><i class='bx bx-check'></i> Suporte na Implementação</li>
+        </ul>
+        <a href="https://app.techneia.com.br/" class="btn btn-secondary">Escolher</a>
+    </div>
+</section>
+
+        <section id="suporte" class="support-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Téchne Desk: Suporte Técnico Especializado</h2>
+                    <p>A tranquilidade de saber que sua infraestrutura de TI está em boas mãos.</p>
+                </header>
+
+                <div class="support-cards">
+                    <div class="support-card">
+                        <i class='bx bxs-hard-hat'></i>
+                        <h3>Visita Técnica</h3>
+                        <p>Atendimento presencial na sua empresa para resolver problemas complexos de infraestrutura e hardware.</p>
+                    </div>
+                     <div class="support-card">
+                        <i class='bx bx-headphone'></i>
+                        <h3>Suporte Remoto</h3>
+                        <p>Soluções rápidas e eficientes através de suporte online, telefônico, e-mail e WhatsApp para o dia a dia.</p>
+                    </div>
+                     <div class="support-card">
+                        <i class='bx bxs-file-blank'></i>
+                        <h3>Contratos Flexíveis</h3>
+                        <p>Planos de suporte mensais ou atendimento sob demanda, com baixo custo e adaptados à sua necessidade.</p>
+                    </div>
+                </div>
+
+                <div class="common-problems">
+                    <h4>Resolvemos problemas como:</h4>
+                    <div class="tags-container">
+                        <span class="tag">Gestão de E-mails</span>
+                        <span class="tag">Instalação de Windows</span>
+                        <span class="tag">Troca de Peças</span>
+                        <span class="tag">Configuração de Impressoras</span>
+                        <span class="tag">Backup de Arquivos</span>
+                        <span class="tag">Organização de Racks</span>
+                        <span class="tag">Suporte a Terceiros</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="plans-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Planos de Suporte que se Adaptam a Você</h2>
+                </header>
+
+                <div class="plans-grid">
+                    <div class="plan-card">
+                        <h3>Básico</h3>
+                        <p class="plan-description">Ideal para quem precisa de suporte ocasionalmente.</p>
+                        <div class="plan-price">6 Horas</div>
+                        <ul>
+                            <li><i class='bx bx-check'></i> Suporte remoto</li>
+                            <li><i class='bx bx-check'></i> Atendimento presencial</li>
+                            <li><i class='bx bx-check'></i> Troca de peças inclusa</li>
+                            <li><i class='bx bx-check'></i> Indicação: até 10 usuários</li>
+                        </ul>
+                        <a href="https://wa.me/5514997000091" class="btn btn-secondary">Selecionar Plano</a>
+                    </div>
+
+                    <div class="plan-card featured">
+                        <div class="featured-badge">Mais Popular</div>
+                        <h3>Essencial</h3>
+                        <p class="plan-description">Para empresas com demandas técnicas regulares.</p>
+                        <div class="plan-price">10 Horas</div>
+                        <ul>
+                            <li><i class='bx bx-check'></i> Suporte remoto</li>
+                            <li><i class='bx bx-check'></i> Atendimento presencial</li>
+                            <li><i class='bx bx-check'></i> Troca de peças inclusa</li>
+                            <li><i class='bx bx-check'></i> Indicação: até 15 usuários</li>
+                        </ul>
+                        <a href="https://wa.me/5514997000091" class="btn btn-primary">Selecionar Plano</a>
+                    </div>
+
+                    <div class="plan-card">
+                        <h3>Avançado</h3>
+                        <p class="plan-description">Perfeito para empresas em plena expansão.</p>
+                        <div class="plan-price">16 Horas</div>
+                        <ul>
+                            <li><i class='bx bx-check'></i> Suporte remoto</li>
+                            <li><i class='bx bx-check'></i> Atendimento presencial</li>
+                            <li><i class='bx bx-check'></i> Troca de peças inclusa</li>
+                            <li><i class='bx bx-check'></i> Indicação: até 20 usuários</li>
+                        </ul>
+                        <a href="https://wa.me/5514997000091" class="btn btn-secondary">Selecionar Plano</a>
+                    </div>
+
+                    <div class="plan-card">
+                         <h3>Completo</h3>
+                        <p class="plan-description">Suporte robusto para equipes maiores e sistemas complexos.</p>
+                        <div class="plan-price">24 Horas</div>
+                        <ul>
+                            <li><i class='bx bx-check'></i> SLA definido</li>
+                            <li><i class='bx bx-check'></i> Consultoria estratégica</li>
+                            <li><i class='bx bx-check'></i> Suporte remoto e presencial</li>
+                            <li><i class='bx bx-check'></i> Indicação: 30+ usuários</li>
+                        </ul>
+                        <a href="https://wa.me/5514997000091" class="btn btn-secondary">Selecionar Plano</a>
+                    </div>
+                </div>
+                <div class="custom-plan-note">
+                    <p><strong>Precisa de algo diferente?</strong> Podemos nos adaptar à sua necessidade. <a href="https://wa.me/5514997000091">Fale Conosco</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                    <a href="#inicio" aria-label="Téchne - Página Inicial" style="display: flex; align-items: center; gap: 8px;">
+                        <img src="media/logo-techne.png" alt="Téchne" width="50" height="50">
+                    <span style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.5rem; color: #ffffff;">Téchne</span>
+                    </a>
+                    <p class="footer-slogan">Tecnologia que transforma negócios</p>
+                </div>
+
+            <div class="footer-nav">
+                <h3>Navegação</h3>
+                <nav aria-label="Navegação do rodapé">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#pilot">Pilot</a></li>
+                        <li><a href="#suporte">Suporte</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Fale Conosco</h3>
+                <address>
+                    <p><a href="mailto:techne.br@gmail.com">techne.br@gmail.com</a></p>
+                    <p><a href="tel:+5514997000091">(14) 99700-0091</a></p>
+                </address>
+                <div class="social-links">
+                    <a href="https://instagram.com/techne.ia" target="_blank" rel="noopener" aria-label="Téchne no Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/5514997000091" target="_blank" rel="noopener" aria-label="Téchne no WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Téchne. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
