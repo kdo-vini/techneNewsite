@@ -613,3 +613,104 @@ header.scrolled {
     line-height: 1.4;
     margin-bottom: 0;
 }
+/* ========== SEÇÃO DE CONTATO ========== */
+.contact-section {
+    padding: 7% ;
+    background-color: var(--cor-fundo-secundario);
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    background-color: var(--cor-fundo);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Adiciona um espaço entre o rótulo e o campo */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--cor-texto-secundario);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--cor-fundo-secundario);
+    border: 2px solid var(--cor-fundo-terciario);
+    border-radius: 8px;
+    color: var(--cor-texto-principal);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    color: var(--cor-texto-secundario);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-item i {
+    font-size: 1.8rem;
+    color: var(--cor-primaria);
+    margin-top: 5px;
+}
+
+.info-item h4 {
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.info-item a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.info-item a:hover {
+    color: var(--cor-primaria);
+}
+
+/* Responsividade do Contato */
+@media (max-width: 992px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
