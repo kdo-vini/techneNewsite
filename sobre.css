@@ -180,3 +180,121 @@
 .menu-aberto .hamburger-line:nth-child(3) {
     transform: rotate(-45deg) translate(8px, -8px);
 }
+/* Menu base */
+.main-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li {
+  position: relative;
+}
+
+/* Dropdown toggle (botão "Serviços") */
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: var(--cor-texto-secundario, #fff);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.dropdown-toggle:focus {
+  outline: 2px solid var(--cor-primaria, #3B82F6);
+}
+
+.dropdown-arrow {
+  font-size: 0.8em;
+  margin-left: 0.2em;
+  transition: transform 0.3s;
+}
+
+/* Submenu base */
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  min-width: 220px;
+  background: #1F2937;
+  border-radius: var(--border-radius, 12px);
+  box-shadow: var(--shadow-light, 0 4px 6px -1px rgba(0,0,0,0.1));
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s, transform 0.25s;
+  z-index: 100;
+  padding: 0.5rem 0;
+}
+
+.submenu li {
+  width: 100%;
+}
+
+.submenu a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--cor-texto-principal, #fff);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.submenu a:hover,
+.submenu a:focus {
+  background: var(--cor-primaria, #3B82F6);
+  color: #fff;
+}
+
+/* --- DESKTOP: Hover para abrir dropdown --- */
+@media (min-width: 768px) {
+  .main-menu {
+    flex-direction: row;
+  }
+  .menu-item-has-children:hover > .submenu,
+  .menu-item-has-children:focus-within > .submenu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .menu-item-has-children:hover > .dropdown-toggle .dropdown-arrow,
+  .menu-item-has-children:focus-within > .dropdown-toggle .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+}
+
+/* --- MOBILE: Dropdown expande por clique --- */
+@media (max-width: 767px) {
+  .main-menu {
+    flex-direction: column;
+    gap: 0;
+  }
+  .submenu {
+    position: static;
+    min-width: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background: #1F2937;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transform: none;
+    display: none;
+  }
+  .menu-item-has-children.open > .submenu {
+    display: block;
+  }
+  .menu-item-has-children.open > .dropdown-toggle .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+}

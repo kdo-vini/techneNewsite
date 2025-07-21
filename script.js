@@ -294,4 +294,20 @@ const initContactForm = () => {
     } catch (error) {
         console.error('❌ Erro ao inicializar JavaScript:', error);
     }
+
+    // Dropdown responsivo para o menu "Serviços"
+    document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            const li = btn.closest('.menu-item-has-children');
+            const isOpen = li.classList.contains('open');
+            // Fecha outros dropdowns abertos no mobile
+            document.querySelectorAll('.menu-item-has-children.open').forEach(openLi => {
+                if (openLi !== li) openLi.classList.remove('open');
+            });
+            li.classList.toggle('open', !isOpen);
+            btn.setAttribute('aria-expanded', String(!isOpen));
+            // Evita navegação
+            e.preventDefault();
+        });
+    });
 });
