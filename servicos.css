@@ -146,6 +146,10 @@ header nav {
     display: none; /* Escondido por padrão no mobile */
 }
 
+.header-cta {
+    display: none; /* Escondido por padrão no mobile */
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -162,10 +166,6 @@ nav a {
 
 nav a:hover {
     color: var(--cor-primaria);
-}
-
-.header-cta {
-    display: none; /* Escondido por padrão no mobile */
 }
 
 .mobile-menu-toggle {
@@ -201,7 +201,8 @@ main {
         display: none;
     }
 
-    nav, .header-cta {
+    header[role="banner"] nav,
+    header[role="banner"] .header-cta {
         display: block;
     }
 }
@@ -651,6 +652,17 @@ footer[role="contentinfo"] {
 
     .social-links {
         justify-content: center;
+    }
+}
+/* Responsividade do Header */
+@media (min-width: 768px) {
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+
+    header[role="banner"] nav,
+    header[role="banner"] .header-cta {
+        display: block;
     }
 }
 
