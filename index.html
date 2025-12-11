@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17382733965"></script>
-        <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17382733965"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'AW-17382733965');
-        </script>
+    </script>
     <!-- Google tag (gtag.js) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="/">
-    
+
     <!-- META TAGS OTIMIZADAS PARA A MARCA TÉCHNE -->
-    <meta name="description" content="Téchne: Soluções em automação de atendimento com a plataforma Pilot e suporte de TI especializado para empresas e pessoas físicas. Tecnologia que trabalha por você.">
+    <meta name="description"
+        content="Téchne: Soluções em automação de atendimento com a plataforma Pilot e suporte de TI especializado para empresas e pessoas físicas. Tecnologia que trabalha por você.">
     <title>Téchne: Automação de Atendimento e Suporte de TI</title>
-    
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techneia.com.br/">
+    <meta property="og:title" content="Téchne - Tecnologia que Trabalha por Você">
+    <meta property="og:description"
+        content="Automação de atendimento com IA e suporte de TI especializado para empresas.">
+    <meta property="og:image" content="https://techneia.com.br/media/TÉCHNE - LOGOTIPO HORIZONTAL SEM FUNDO.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Téchne - Tecnologia que Trabalha por Você">
+    <meta name="twitter:description" content="Automação de atendimento com IA e suporte de TI especializado.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://techneia.com.br/">
+
     <link rel="icon" type="image/x-icon" href="/media/logo-techne.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +44,12 @@
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/js/component.js" defer></script>
-<!-- Favicon para o modo CLARO (Light Mode) -->
-<link rel="icon" href="/media/logo-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
-<!-- Favicon para o modo ESCURO (Dark Mode) -->
-<link rel="icon" href="/media/logo-techne.png" type="image/svg+xml" media="(prefers-color-scheme: dark)">
-<!-- Favicon padrão (fallback) para navegadores que não suportam a funcionalidade -->
-<link rel="icon" href="/media/logo-techne.png" type="image/svg+xml">
+    <!-- Favicon para o modo CLARO (Light Mode) -->
+    <link rel="icon" href="/media/logo-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+    <!-- Favicon para o modo ESCURO (Dark Mode) -->
+    <link rel="icon" href="/media/logo-techne.png" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+    <!-- Favicon padrão (fallback) para navegadores que não suportam a funcionalidade -->
+    <link rel="icon" href="/media/logo-techne.png" type="image/svg+xml">
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
@@ -55,6 +73,7 @@
 }
 </script>
 </head>
+
 <body>
     <header role="banner" id="header-placeholder"></header>
     <main role="main">
@@ -64,62 +83,67 @@
                     <!-- Título principal que abraça todos os serviços -->
                     <h1>Tecnologia que Trabalha por Você</h1>
                     <p class="hero-description" style="font-size: 1.2rem; max-width: 700px;">
-                        Da automação de atendimento com Inteligência Artificial que escala seu negócio, ao suporte de TI que garante sua tranquilidade. A Téchne é sua parceira completa em tecnologia.
+                        Da automação de atendimento com Inteligência Artificial que escala seu negócio, ao suporte de TI
+                        que garante sua tranquilidade. A Téchne é sua parceira completa em tecnologia.
                     </p>
                     <div class="hero-actions">
                         <!-- CTA que rola para a nova seção de soluções -->
                         <a href="#nossas-solucoes" class="btn btn-primary" role="button">Descubra Nossas Soluções</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== NOVA SEÇÃO DE SOLUÇÕES - B2B vs. B2C/Serviços ========== -->
+        <section id="nossas-solucoes" class="solutions-section-revamped">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Conheça Nossas Frentes de Atuação</h2>
+                    <p>Temos a solução ideal, seja para escalar seu negócio com software ou para garantir que sua
+                        infraestrutura funcione perfeitamente.</p>
+                </header>
+
+                <div class="solutions-grid-revamped">
+                    <!-- Card 1: O Produto (SaaS) -->
+                    <div class="solution-card-revamped">
+                        <div class="card-image">
+                            <img src="media/logo-card.png" alt="Ícone da plataforma Téchne Pilot" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">PRODUTO SAAS</span>
+                            <h3>Téchne Pilot</h3>
+                            <p>Nossa plataforma SaaS com chatbot e IA para automação de atendimento no WhatsApp,
+                                Instagram e mais. Ideal para
+                                empresas que buscam escalar a comunicação a nível nacional.</p>
+                            <a href="/pages/pilot.html" class="btn btn-primary">Conhecer a Plataforma</a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: O Serviço -->
+                    <div class="solution-card-revamped">
+                        <div class="card-image">
+                            <img src="media/TS-card.png" alt="Profissional de TI prestando suporte" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">SERVIÇOS DE TI</span>
+                            <h3>Téchne Desk</h3>
+                            <p>Suporte técnico especializado. Do atendimento remoto para todo o Brasil à assistência
+                                presencial para formatação,
+                                upgrades e suporte a empresas e pessoas na região de Promissão.</p>
+                            <a href="suporte-ti.html" class="btn btn-secondary">Ver Serviços de Suporte</a>
                         </div>
                     </div>
                 </div>
-            </section>
-        <!-- ========== NOVA SEÇÃO DE SOLUÇÕES - B2B vs. B2C/Serviços ========== -->
-<section id="nossas-solucoes" class="solutions-section-revamped">
-    <div class="container">
-        <header class="section-header">
-            <h2>Conheça Nossas Frentes de Atuação</h2>
-            <p>Temos a solução ideal, seja para escalar seu negócio com software ou para garantir que sua infraestrutura funcione perfeitamente.</p>
-        </header>
-
-        <div class="solutions-grid-revamped">
-            <!-- Card 1: O Produto (SaaS) -->
-            <div class="solution-card-revamped">
-                <div class="card-image">
-                    <img src="media/logo-card.png" alt="Ícone da plataforma Téchne Pilot">
-                </div>
-                <div class="card-content">
-                    <span class="card-category">PRODUTO SAAS</span>
-                    <h3>Téchne Pilot</h3>
-                    <p>Nossa plataforma SaaS com chatbot e IA para automação de atendimento no WhatsApp, Instagram e mais. Ideal para 
-                        empresas que buscam escalar a comunicação a nível nacional.</p>
-                    <a href="/pages/pilot.html" class="btn btn-primary">Conhecer a Plataforma</a>
-                </div>
             </div>
-
-            <!-- Card 2: O Serviço -->
-            <div class="solution-card-revamped">
-                <div class="card-image">
-                    <img src="media/TS-card.png" alt="Profissional de TI prestando suporte">
-                </div>
-                <div class="card-content">
-                    <span class="card-category">SERVIÇOS DE TI</span>
-                    <h3>Téchne Desk</h3>
-                    <p>Suporte técnico especializado. Do atendimento remoto para todo o Brasil à assistência presencial para formatação, 
-                        upgrades e suporte a empresas e pessoas na região de Promissão.</p>
-                    <a href="suporte-ti.html" class="btn btn-secondary">Ver Serviços de Suporte</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ========== FIM DA NOVA SEÇÃO DE SOLUÇÕES ========== -->
+        </section>
+        <!-- ========== FIM DA NOVA SEÇÃO DE SOLUÇÕES ========== -->
 
 
         <section id="sobre" class="about-section">
             <div class="container">
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="media/IT_profesional.png" alt="Equipe Téchne trabalhando em soluções tecnológicas" width="500" height="400">
+                        <img src="media/IT_profesional.png" alt="Equipe Téchne trabalhando em soluções tecnológicas"
+                            width="500" height="400" loading="lazy">
                     </div>
 
                     <div class="about-text">
@@ -153,7 +177,8 @@
                 </header>
 
                 <div class="contact-actions">
-                    <a href="https://calendly.com/techne-br/30min" class="btn btn-primary" role="button" target="_blank" rel="noopener">
+                    <a href="https://calendly.com/techne-br/30min" class="btn btn-primary" role="button" target="_blank"
+                        rel="noopener">
                         Agende uma Reunião Online
                     </a>
                     <a href="https://wa.me/5514991537503" class="btn btn-secondary" role="button">
@@ -163,68 +188,71 @@
             </div>
         </section>
         <section id="contato" class="contact-section">
-    <div class="container">
-        <header class="section-header">
-            <h2>Dúvidas?  Vamos Conversar!</h2>
-            <p>Envie sua dúvida ou solicitação diretamente por aqui. Respondemos o mais rápido possível.</p>
-        </header>
+            <div class="container">
+                <header class="section-header">
+                    <h2>Dúvidas? Vamos Conversar!</h2>
+                    <p>Envie sua dúvida ou solicitação diretamente por aqui. Respondemos o mais rápido possível.</p>
+                </header>
 
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <form action="https://formspree.io/f/xblkdozo" method="POST">
-                    <div class="form-group">
-                        <label for="name">Seu Nome</label>
-                        <input type="text" id="name" name="name"  placeholder="Insira seu nome aqui" required>
+                <div class="contact-wrapper">
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/xblkdozo" method="POST">
+                            <div class="form-group">
+                                <label for="name">Seu Nome</label>
+                                <input type="text" id="name" name="name" placeholder="Insira seu nome aqui" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Seu Telefone (WhatsApp)</label>
+                                <input type="tel" id="phone" name="phone"
+                                    placeholder="Insira seu número de telefone aqui" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Sua Mensagem</label>
+                                <textarea id="message" name="message" rows="6"
+                                    placeholder="Digite a sua mensagem aqui..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Seu Telefone (WhatsApp)</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Insira seu número de telefone aqui" required>
+
+                    <div class="contact-info">
+                        <h3>Contato Direto</h3>
+                        <p>Prefere falar diretamente? Sem problemas. Escolha o canal de sua preferência.</p>
+
+                        <div class="info-item">
+                            <i class='bx bxs-envelope'></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <a href="mailto:techne.br@gmail.com">techne.br@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class='bx bxl-whatsapp'></i> <!-- Ícone do WhatsApp -->
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/5514991537503?text=Olá,%20vim%20pelo%20site!" target="_blank">
+                                    (14) 99153-7503
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="info-item">
+                            <i class='bx bxs-calendar-check'></i>
+                            <div>
+                                <h4>Agendar Reunião</h4>
+                                <a href="https://calendly.com/techne-br/30min" target="_blank">Agende um horário no
+                                    Calendly</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Sua Mensagem</label>
-                        <textarea id="message" name="message" rows="6"  placeholder="Digite a sua mensagem aqui..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                </form>
+                </div>
             </div>
-
-            <div class="contact-info">
-                <h3>Contato Direto</h3>
-                <p>Prefere falar diretamente? Sem problemas. Escolha o canal de sua preferência.</p>
-                
-                <div class="info-item">
-                    <i class='bx bxs-envelope'></i>
-                    <div>
-                        <h4>E-mail</h4>
-                        <a href="mailto:techne.br@gmail.com">techne.br@gmail.com</a>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                <i class='bx bxl-whatsapp'></i> <!-- Ícone do WhatsApp -->
-                <div>
-                    <h4>WhatsApp</h4>
-                    <a href="https://wa.me/5514991537503?text=Olá,%20vim%20pelo%20site!" target="_blank">
-                    (14) 99153-7503
-                    </a>
-                </div>
-                </div>
-
-
-                <div class="info-item">
-                    <i class='bx bxs-calendar-check'></i>
-                    <div>
-                        <h4>Agendar Reunião</h4>
-                        <a href="https://calendly.com/techne-br/30min" target="_blank">Agende um horário no Calendly</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
     </main>
     <script src="/js/script.js"></script>
     <footer role="contentinfo" id="footer-placeholder"></footer>
 </body>
-</html>
 
+</html>

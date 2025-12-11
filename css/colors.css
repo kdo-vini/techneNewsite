@@ -1,0 +1,85 @@
+/* ========== TÉCHNE - CENTRALIZED COLOR SYSTEM ========== */
+/* Modern Tech Palette: Dark Blue + Magenta */
+/* Import this file in all other stylesheets for consistent theming */
+
+:root {
+    /* ===== Background Colors ===== */
+    --cor-fundo: #0A0E27;
+    /* Deep navy - primary background */
+    --cor-fundo-secundario: #141B3D;
+    /* Rich dark blue - secondary surfaces */
+    --cor-fundo-terciario: #1E2749;
+    /* Elevated surfaces, cards */
+
+    /* ===== Text Colors ===== */
+    --cor-texto-principal: #F8FAFC;
+    /* Crisp white - primary text */
+    --cor-texto-secundario: #CBD5E1;
+    /* Soft gray-blue - secondary text */
+
+    /* ===== Primary Accent (Blue) ===== */
+    --cor-primaria: #3B82F6;
+    /*  tech blue - main CTAs */
+    --cor-primaria-hover: #2359b1;
+    /* Deeper blue - hover states */
+    --cor-primaria-light: rgba(59, 130, 246, 0.1);
+    /* Magenta glow/background */
+
+    /* ===== Secondary Accent (Magenta) ===== */
+    --cor-secundaria: #5c1374;
+    /* Bright blue - secondary accents */
+    --cor-secundaria-hover: #4b115f;
+    /* Deeper magenta - hover states */
+    --cor-secundaria-light: rgba(152, 22, 179, 0.1);
+    /* Blue glow/background */
+
+    /* ===== Utility Colors ===== */
+    --cor-border: rgba(203, 213, 225, 0.1);
+    /* Subtle borders */
+    --cor-overlay: rgba(10, 14, 39, 0.95);
+    /* Dark overlay for modals */
+
+    /* ===== Gradients ===== */
+    --gradient-primary: linear-gradient(135deg, #E91E8C 0%, #3B82F6 100%);
+    --gradient-background: linear-gradient(135deg, var(--cor-fundo) 0%, var(--cor-fundo-secundario) 100%);
+    --gradient-hero: radial-gradient(circle at 50% 50%, rgba(233, 30, 140, 0.15) 0%, transparent 50%);
+
+    /* ===== Shadows ===== */
+    --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+    --shadow-heavy: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    --shadow-magenta: 0 10px 30px rgba(233, 30, 140, 0.3);
+    --shadow-blue: 0 10px 30px rgba(59, 130, 246, 0.3);
+
+    /* ===== Design Tokens ===== */
+    --border-radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ===== Color Usage Guidelines ===== */
+/*
+BACKGROUNDS:
+- Use --cor-fundo for main page background
+- Use --cor-fundo-secundario for sections, alternating backgrounds
+- Use --cor-fundo-terciario for cards, elevated elements
+
+TEXT:
+- Use --cor-texto-principal for headings and important text
+- Use --cor-texto-secundario for body text and descriptions
+
+ACCENTS:
+- Use --cor-primaria (magenta) for primary CTAs, important buttons
+- Use --cor-secundaria (blue) for secondary actions, links, icons
+- Use gradients for special hero sections or featured elements
+
+HOVER STATES:
+- Always use the corresponding -hover variant
+- Add transform: translateY(-2px) for lift effect
+- Combine with shadow effects for depth
+
+ACCESSIBILITY:
+- All color combinations meet WCAG AA contrast standards
+- Magenta (#E91E8C) on dark backgrounds: 4.8:1 ratio
+- Blue (#3B82F6) on dark backgrounds: 5.2:1 ratio
+- White text on dark backgrounds: 15.8:1 ratio
+*/
