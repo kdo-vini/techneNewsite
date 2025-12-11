@@ -876,11 +876,37 @@ header.scrolled {
     background-color: var(--cor-fundo-secundario);
 }
 
+.solutions-category {
+    margin-bottom: 5rem;
+}
+
+.solutions-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.category-description {
+    text-align: center;
+    color: var(--cor-texto-secundario);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
 .solutions-grid-revamped {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .solution-card-revamped {
