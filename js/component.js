@@ -25,5 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
   // Caminhos absolutos (funcionam em / e em /pages/)
   loadComponent("#header-placeholder", "/headerFooter/header.html");
   loadComponent("#footer-placeholder", "/headerFooter/footer.html");
+
+  // Carrega favicon dinamicamente
+  fetch("/meta/favicon.html")
+    .then(response => response.text())
+    .then(data => {
+      const head = document.head;
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = data;
+      Array.from(tempDiv.children).forEach(child => {
+        head.appendChild(child);
+      });
+    })
+    .catch(error => console.error('Erro ao carregar favicon:', error));
 });
 
