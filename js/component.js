@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
           if (selector === "#header-placeholder") {
             document.dispatchEvent(new CustomEvent("headerLoaded"));
           }
+          if (selector === "#footer-placeholder") {
+            document.dispatchEvent(new CustomEvent("footerLoaded"));
+          }
         }
       })
       .catch((error) => console.error(error));

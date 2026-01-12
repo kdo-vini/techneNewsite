@@ -612,7 +612,7 @@ footer {
 
 .footer-bottom p {
     font-size: 0.85rem;
-    color: var(--cor-secundaria);
+    color: #fff;
 }
 
 /* ========== RESPONSIVIDADE - CELULARES ========== */

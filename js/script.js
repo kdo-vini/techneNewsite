@@ -229,57 +229,57 @@ document.addEventListener('headerLoaded', () => {
         });
     };
     // ========== FUNÇÃO PARA ENVIO DO FORMULÁRIO DE CONTATO COM AJAX ==========
-const initContactForm = () => {
-    const form = document.querySelector('.contact-form form');
-    if (!form) return;
+    const initContactForm = () => {
+        const form = document.querySelector('.contact-form form');
+        if (!form) return;
 
-    form.addEventListener('submit', function(e) {
-        // 1. Previne o comportamento padrão (redirecionamento)
-        e.preventDefault();
+        form.addEventListener('submit', function (e) {
+            // 1. Previne o comportamento padrão (redirecionamento)
+            e.preventDefault();
 
-        const formData = new FormData(form);
-        const formAction = form.action;
+            const formData = new FormData(form);
+            const formAction = form.action;
 
-        // 2. Envia os dados para o Formspree em segundo plano
-        fetch(formAction, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        .then(response => {
-            // 3. Verifica a resposta do Formspree
-            if (response.ok) {
-                // 4. Se deu tudo certo, mostra o alerta de sucesso
-                Swal.fire({
-                    title: 'Enviado!',
-                    text: 'Sua mensagem foi enviada com sucesso. Entraremos em contato em breve!',
-                    icon: 'success',
-                    confirmButtonColor: '#3B82F6' // Cor azul do seu site
+            // 2. Envia os dados para o Formspree em segundo plano
+            fetch(formAction, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => {
+                    // 3. Verifica a resposta do Formspree
+                    if (response.ok) {
+                        // 4. Se deu tudo certo, mostra o alerta de sucesso
+                        Swal.fire({
+                            title: 'Enviado!',
+                            text: 'Sua mensagem foi enviada com sucesso. Entraremos em contato em breve!',
+                            icon: 'success',
+                            confirmButtonColor: '#3B82F6' // Cor azul do seu site
+                        });
+                        form.reset(); // Limpa o formulário
+                    } else {
+                        // 5. Se deu erro, mostra o alerta de erro
+                        Swal.fire({
+                            title: 'Oops...',
+                            text: 'Algo deu errado no envio. Por favor, tente novamente ou contate diretamente.',
+                            icon: 'error',
+                            confirmButtonColor: '#3B82F6'
+                        });
+                    }
+                })
+                .catch(error => {
+                    // 5b. Se deu erro de rede
+                    Swal.fire({
+                        title: 'Erro de Conexão',
+                        text: 'Não foi possível enviar. Verifique sua conexão com a internet.',
+                        icon: 'error',
+                        confirmButtonColor: '#3B82F6'
+                    });
                 });
-                form.reset(); // Limpa o formulário
-            } else {
-                // 5. Se deu erro, mostra o alerta de erro
-                Swal.fire({
-                    title: 'Oops...',
-                    text: 'Algo deu errado no envio. Por favor, tente novamente ou contate diretamente.',
-                    icon: 'error',
-                    confirmButtonColor: '#3B82F6'
-                });
-            }
-        })
-        .catch(error => {
-            // 5b. Se deu erro de rede
-            Swal.fire({
-                title: 'Erro de Conexão',
-                text: 'Não foi possível enviar. Verifique sua conexão com a internet.',
-                icon: 'error',
-                confirmButtonColor: '#3B82F6'
-            });
         });
-    });
-};
+    };
     // ========== INICIALIZAÇÃO ==========
     /**
      * Executa todas as funcionalidades após DOM estar pronto
@@ -290,7 +290,7 @@ const initContactForm = () => {
         initScrollReveal();
         initAdditionalEffects();
         initAccessibility();
-        initContactForm(); 
+        initContactForm();
         console.log('✅ Téchne: JavaScript inicializado com sucesso');
     } catch (error) {
         console.error('❌ Erro ao inicializar JavaScript:', error);
@@ -298,7 +298,7 @@ const initContactForm = () => {
 
     // Dropdown responsivo para o menu "Serviços"
     document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-        btn.addEventListener('click', function(e) {
+        btn.addEventListener('click', function (e) {
             const li = btn.closest('.menu-item-has-children');
             const isOpen = li.classList.contains('open');
             // Fecha outros dropdowns abertos no mobile
@@ -312,3 +312,11 @@ const initContactForm = () => {
         });
     });
 }, { once: true }); // corrige o hamburger pra mobile. NAO EXCLUIR
+
+// ========== ATUALIZAÇÃO DO ANO NO RODAPÉ ==========
+document.addEventListener('footerLoaded', () => {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
