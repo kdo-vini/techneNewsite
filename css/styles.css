@@ -137,6 +137,13 @@ header {
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(107, 114, 128, 0.2);
     padding: 1rem 0;
+    transition: padding 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
 }
 
 header .container {
@@ -157,6 +164,13 @@ header .container {
 .logo img {
     height: 120px;
     width: auto;
+    transition: height 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 60px;
+    }
 }
 
 /* Menu base */
@@ -388,7 +402,15 @@ nav a:hover::after {
 
 /* ========== MAIN CONTENT ========== */
 main {
-    padding-top: 80px;
+    padding-top: 152px;
+    /* 120px logo + 2rem padding + border */
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 77px;
+        /* 60px logo + 1rem padding + border */
+    }
 }
 
 /* ========== SEÇÃO HERÓI ========== */
@@ -451,7 +473,6 @@ section {
 /* ========== SEÇÃO SOLUÇÕES ========== */
 .solutions-section {
     background-color: var(--cor-fundo-secundario);
-    padding-top: 10rem;
 }
 
 
@@ -545,8 +566,7 @@ section {
 /* Regra especial para telas menores (mobile) */
 @media (max-width: 768px) {
     .contact-actions {
-        margin-top: 12rem;
-        /* Este valor será usado em celulares */
+        margin-top: 2rem;
     }
 }
 
@@ -777,7 +797,7 @@ header.scrolled {
 
 @media screen and (max-width: 768px) {
     .contact-wrapper {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 
 }
@@ -1022,11 +1042,11 @@ header.scrolled {
 
 @media (max-width: 768px) {
     .support-cards {
-        margin-top: 30%;
+        margin-top: 2rem;
     }
 
     .plans-grid {
-        margin-top: 20%;
+        margin-top: 2rem;
     }
 }
 
@@ -1068,7 +1088,7 @@ header.scrolled {
     }
 
     .solutions-grid-revamped {
-        margin-top: 8rem;
+        margin-top: 2rem;
     }
 }
 
