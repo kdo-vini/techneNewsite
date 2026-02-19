@@ -1,13 +1,18 @@
-/* ========== CABEÇALHO ========== */
+@media (min-width: 769px) {
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(17, 24, 39, 0.9);
+    background-color: rgba(10, 14, 39, 0.85);
     backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(107, 114, 128, 0.2);
+    border-bottom: 1px solid var(--cor-border);
     padding: 1rem 0;
     transition: padding 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
 }
@@ -255,7 +260,7 @@ nav a:hover::after {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(17, 24, 39, 0.98);
+    background-color: var(--cor-overlay);
     backdrop-filter: blur(20px);
     z-index: 999;
     flex-direction: column;
@@ -287,6 +292,6 @@ nav a:hover::after {
 }
 
 header.scrolled {
-    background-color: rgba(17, 24, 39, 0.95);
+    background-color: rgba(10, 14, 39, 0.95);
     backdrop-filter: blur(20px);
 }

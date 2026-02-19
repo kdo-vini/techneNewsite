@@ -82,7 +82,7 @@
 }
 
 .solution-card-revamped {
-    background: rgba(20, 27, 61, 0.5);
+    background: var(--cor-fundo-secundario);
     backdrop-filter: blur(10px);
     border-radius: 24px;
     overflow: hidden;

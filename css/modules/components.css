@@ -216,10 +216,11 @@
 }
 
 .faq-item {
-    background-color: var(--cor-fundo-secundario);
+    background-color: var(--cor-fundo-terciario);
     padding: 2rem;
     border-radius: var(--border-radius);
     margin-bottom: 1.5rem;
+    border: 1px solid var(--cor-border);
 }
 
 .faq-question {
