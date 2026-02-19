@@ -1,0 +1,76 @@
+/* ========== RODAPÉ ========== */
+footer {
+    background-color: var(--cor-fundo);
+    border-top: 1px solid rgba(107, 114, 128, 0.2);
+    padding: 3rem 0 1.5rem;
+}
+
+.footer-content {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+}
+
+.footer-brand .footer-slogan {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.footer-contact address {
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+
+.footer-contact a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-contact a:hover {
+    color: var(--cor-primaria);
+}
+
+.social-links ul,
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links a,
+.footer-nav a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-links a:hover,
+.footer-nav a:hover {
+    color: var(--cor-primaria);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(107, 114, 128, 0.2);
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .social-links ul,
+    .footer-nav ul {
+        flex-direction: column;
+    }
+}

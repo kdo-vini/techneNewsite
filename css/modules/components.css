@@ -1,0 +1,237 @@
+/* ========== COMPONENTES COMPARTILHADOS ========== */
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    padding: 0.875rem 1.75rem;
+    border: none;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary {
+    background: var(--cor-primaria);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn.lg {
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: var(--cor-primaria-hover);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--cor-texto-principal);
+    border: 2px solid var(--cor-secundaria);
+}
+
+.btn-secondary:hover {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria-hover);
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* CARDS GENÉRICOS */
+.card-base {
+    background-color: var(--cor-fundo);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(107, 114, 128, 0.2);
+}
+
+.card-base:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: var(--cor-primaria);
+}
+
+/* FORMULÁRIO DE CONTATO */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    background-color: var(--cor-fundo);
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--cor-texto-secundario);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--cor-fundo-secundario);
+    border: 2px solid var(--cor-fundo-terciario);
+    border-radius: 8px;
+    color: var(--cor-texto-principal);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.contact-info {
+    color: var(--cor-texto-secundario);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-item i {
+    font-size: 1.8rem;
+    color: var(--cor-primaria);
+    margin-top: 5px;
+}
+
+.info-item h4 {
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.info-item a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.info-item a:hover {
+    color: var(--cor-primaria);
+}
+
+@media (max-width: 992px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2rem;
+    }
+}
+
+/* BOTÕES FLUTUANTES */
+.whatsapp-float,
+.instagram-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-float {
+    background: #25D366;
+}
+
+.instagram-float {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.whatsapp-float:hover,
+.instagram-float:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+
+    .whatsapp-float,
+    .instagram-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+}
+
+/* UTILITIES */
+.icon-feature {
+    font-size: 3rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: var(--cor-fundo-secundario);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+}
+
+.faq-question {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.faq-answer {
+    color: var(--cor-texto-secundario);
+    line-height: 1.8;
+}
