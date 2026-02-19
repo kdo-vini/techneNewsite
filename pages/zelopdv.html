@@ -75,19 +75,19 @@
 <body>
     <header role="banner" id="header-placeholder"></header>
     <main role="main">
-        <!-- ========== HERO SECTION ========== -->
         <section class="hero-section">
             <div class="container">
                 <div class="hero-content">
+                    <span class="hero-badge">Zelo PDV 2.0</span>
                     <h1>Simples. Inteligente. Completo.</h1>
                     <p class="hero-description">
-                        O Zelo PDV é um sistema de ponto de venda online feito para pequenos negócios que precisam de
-                        organização, controle e clareza financeira — sem complicação.
+                        O Zelo PDV é a ferramenta definitiva para pequenos negócios que buscam clareza financeira e
+                        eficiência operacional — sem a complexidade de sistemas antigos.
                     </p>
                     <div class="hero-actions">
-                        <a href="https://www.zelopdv.com.br/cadastro" class="btn btn-primary" role="button">Começar
+                        <a href="https://www.zelopdv.com.br/cadastro" class="btn btn-primary lg" role="button">Começar
                             Teste Grátis</a>
-                        <a href="#zelopdv-planos" class="btn btn-secondary" role="button">Ver Plano</a>
+                        <a href="#sistema-acao" class="btn btn-secondary lg" role="button">Conhecer o Sistema</a>
                     </div>
                 </div>
             </div>
@@ -217,49 +217,79 @@
                         <button class="tab-link active" data-tab="tab-dashboard">
                             <i class='bx bx-bar-chart-alt-2'></i> Dashboard
                         </button>
-                        <button class="tab-link" data-tab="tab-relatorios">
-                            <i class='bx bx-file'></i> Relatórios
-                        </button>
                         <button class="tab-link" data-tab="tab-pdv">
                             <i class='bx bx-cart'></i> Frente de Caixa
+                        </button>
+                        <button class="tab-link" data-tab="tab-relatorios">
+                            <i class='bx bx-file'></i> Relatórios & PDF
                         </button>
                     </div>
 
                     <div class="tab-content-wrapper">
+                        <!-- Dashboard -->
                         <div id="tab-dashboard" class="tab-content active">
-                            <img src="media/zelo/zelo-dashboard.png" alt="Dashboard Administrativo do Zelo PDV"
-                                loading="lazy">
-                            <div>
-                                <h3>Dashboard Admin</h3>
+                            <div class="tab-image-wrapper">
+                                <img src="media/zelo/zelo-dashboard.png" alt="Dashboard Administrativo do Zelo PDV"
+                                    loading="lazy">
+                            </div>
+                            <div class="tab-text">
+                                <h3>Dashboard Operacional</h3>
                                 <p>
-                                    Acompanhe as vendas do dia, ticket médio e status do estoque em tempo real. Agora
-                                    com
-                                    <strong>proteção por PIN</strong> para informações de lucro e despesas.
+                                    Tenha uma visão 360º do seu negócio. Acompanhe vendas, ticket médio e nível de
+                                    estoque em tempo real.
                                 </p>
+                                <ul class="feature-list">
+                                    <li><i class='bx bx-check-circle'></i> Gráficos de vendas por hora</li>
+                                    <li><i class='bx bx-check-circle'></i> Status de abertura/fechamento de caixa</li>
+                                    <li><i class='bx bx-check-circle'></i> <strong>Acesso restrito via PIN</strong> para
+                                        lucros</li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div id="tab-relatorios" class="tab-content">
-                            <img src="media/zelo/zelo-relatorios.png" alt="Relatórios avançados do Zelo PDV"
-                                loading="lazy">
-                            <div>
-                                <h3>Relatórios e Exportação PDF</h3>
-                                <p>
-                                    Analise seu <strong>lucro real</strong>, margem percentual e balanço geral. Gere
-                                    documentos profissionais em PDF para sua contabilidade ou gestão.
-                                </p>
-                            </div>
-                        </div>
-
+                        <!-- PDV -->
                         <div id="tab-pdv" class="tab-content">
-                            <img src="media/zelo/zelo-frente-caixa.png"
-                                alt="Nova Frente de Caixa do Zelo PDV com UI atualizada" loading="lazy">
-                            <div>
-                                <h3>Nova Frente de Caixa (UI 2.0)</h3>
+                            <div class="tab-image-wrapper">
+                                <img src="media/zelo/zelo-frente-caixa.png" alt="Interface de PDV do Zelo PDV"
+                                    loading="lazy">
+                            </div>
+                            <div class="tab-text">
+                                <h3>Nova Frente de Caixa</h3>
                                 <p>
-                                    Finalização ainda mais ágil, busca inteligente e interface otimizada para Desktop e
-                                    Mobile. Comprovante via WhatsApp integrado.
+                                    Interface otimizada para Desktop e Mobile. Venda em segundos com busca inteligente e
+                                    categorias organizadas.
                                 </p>
+                                <ul class="feature-list">
+                                    <li><i class='bx bx-check-circle'></i> Busca rápida de produtos</li>
+                                    <li><i class='bx bx-check-circle'></i> Finalização em 3 cliques</li>
+                                    <li><i class='bx bx-check-circle'></i> Comprovante via WhatsApp</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Relatórios -->
+                        <div id="tab-relatorios" class="tab-content">
+                            <div class="tab-grid">
+                                <div class="tab-image-wrapper">
+                                    <img src="media/zelo/zelo-relatorios.png" alt="Tela de relatórios detalhados"
+                                        loading="lazy">
+                                </div>
+                                <div class="tab-image-wrapper">
+                                    <img src="media/zelo/zelo-pdf.png" alt="Exemplo de relatório PDF" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="tab-text">
+                                <h3>Gestão Financeira</h3>
+                                <p>
+                                    Analise seu lucro real e margem percentual com um clique. Gere documentos
+                                    profissionais para gestão.
+                                </p>
+                                <ul class="feature-list">
+                                    <li><i class='bx bx-check-circle'></i> Margem de lucro por produto</li>
+                                    <li><i class='bx bx-check-circle'></i> Balanço de despesas vs receitas</li>
+                                    <li><i class='bx bx-check-circle'></i> <strong>Exportação PDF</strong> profissional
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

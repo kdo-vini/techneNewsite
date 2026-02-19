@@ -1,48 +1,80 @@
 /* ========== PÁGINA SUPORTE ========== */
 
 .support-section {
-    padding: 6rem 0;
+    padding: 100px 0;
 }
 
 .support-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-bottom: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 5rem;
 }
 
 .support-card {
-    background-color: var(--cor-fundo-secundario);
-    padding: 2.5rem;
-    border-radius: var(--border-radius);
+    background: rgba(20, 27, 61, 0.4);
+    backdrop-filter: blur(12px);
+    padding: 3rem;
+    border-radius: 24px;
     text-align: center;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid transparent;
+    transition: var(--transition);
+    border: 1px solid var(--cor-border);
 }
 
 .support-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 40px 60px -15px rgba(0, 0, 0, 0.4);
     border-color: var(--cor-primaria);
+    background: rgba(20, 27, 61, 0.8);
 }
 
 .support-card i {
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: var(--cor-primaria);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
+}
+
+.support-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-texto-principal);
+}
+
+.support-card p {
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+}
+
+.common-problems h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    color: var(--cor-texto-principal);
 }
 
 .tags-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
 .tag {
-    background-color: var(--cor-fundo-terciario);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
+    background: var(--cor-fundo-terciario);
+    border: 1px solid var(--cor-border);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cor-texto-secundario);
+    transition: var(--transition);
+}
+
+.tag:hover {
+    background: var(--cor-primaria-light);
+    border-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    transform: scale(1.05);
 }
