@@ -160,6 +160,67 @@
     box-shadow: var(--shadow-medium);
 }
 
+/* FUNCIONALIDADES GRID - ZELO PDV */
+.features-grid-zelo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.feature-card-zelo {
+    background: var(--cor-fundo-secundario);
+    border: 1px solid var(--cor-border);
+    padding: 3rem 2.5rem;
+    border-radius: 24px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-card-zelo:hover {
+    transform: translateY(-10px);
+    border-color: var(--cor-primaria);
+    background: var(--cor-fundo-terciario);
+    box-shadow: var(--shadow-heavy);
+}
+
+.feature-card-zelo i {
+    font-size: 2.8rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
+    background: var(--cor-primaria-light);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    transition: var(--transition);
+}
+
+.feature-card-zelo:hover i {
+    transform: scale(1.1) rotate(-5deg);
+    background: var(--cor-primaria);
+    color: white;
+}
+
+.feature-card-zelo h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--cor-texto-principal);
+}
+
+.feature-card-zelo p {
+    font-size: 1.05rem;
+    color: var(--cor-texto-secundario);
+    line-height: 1.7;
+    margin: 0;
+}
+
 /* PILOT DETAILS LIST */
 .feature-list {
     list-style: none;
