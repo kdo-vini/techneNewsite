@@ -4,7 +4,7 @@
     }
 }
 
-header {
+#header-placeholder {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,12 +19,12 @@ header {
 }
 
 @media (max-width: 768px) {
-    header {
+    #header-placeholder {
         padding: 0.5rem 0;
     }
 }
 
-header .container {
+#header-placeholder .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,7 +198,7 @@ header .container {
 }
 
 /* Navegação - Oculta no mobile */
-header nav {
+#header-placeholder nav {
     display: none;
 }
 
@@ -286,7 +286,7 @@ nav a:hover {
     transform: rotate(-45deg) translate(8px, -8px);
 }
 
-header.scrolled {
+#header-placeholder.scrolled {
     background-color: rgba(10, 14, 39, 0.95);
     backdrop-filter: blur(20px);
 }

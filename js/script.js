@@ -13,7 +13,7 @@ document.addEventListener('headerLoaded', () => {
 // ========== UI & NAVEGAÇÃO ==========
 function initUI() {
     const body = document.body;
-    const header = document.querySelector('header');
+    const header = document.getElementById('header-placeholder');
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('nav');
 
