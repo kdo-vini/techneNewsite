@@ -189,7 +189,10 @@
     }
 
     .menu-item-has-children.open>.submenu {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-top: 1.5rem;
     }
 
     .menu-item-has-children.open>.dropdown-toggle .dropdown-arrow {
@@ -269,9 +272,17 @@ nav a:hover {
     text-align: center;
 }
 
-.menu-aberto nav a {
+.menu-aberto nav a,
+.menu-aberto nav .dropdown-toggle {
     font-size: 1.5rem;
     font-weight: 600;
+    color: var(--cor-texto-principal);
+}
+
+.menu-aberto nav .submenu a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cor-texto-secundario);
 }
 
 .menu-aberto .hamburger-line:nth-child(1) {
