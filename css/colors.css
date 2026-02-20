@@ -6,23 +6,23 @@
     /* ===== Background Colors ===== */
     --cor-fundo: #FFFFFF;
     /* Clean white - primary background */
-    --cor-fundo-secundario: #F5F5F7;
-    /* Apple gray - secondary backgrounds (cards/sections) */
-    --cor-fundo-terciario: #E5E5EA;
-    /* Slightly darker gray for borders/dividers or deeper cards */
+    --cor-fundo-secundario: #FBFBFD;
+    /* Apple soft gray */
+    --cor-fundo-terciario: #F5F5F7;
+    /* Deeper gray for areas that need boundaries */
 
     /* ===== Text Colors ===== */
     --cor-texto-principal: #1D1D1F;
     /* Apple pure black/dark gray - primary text */
-    --cor-texto-secundario: #86868B;
-    /* Apple light gray - secondary/muted text */
+    --cor-texto-secundario: #4E4E53;
+    /* Apple medium gray - readable secondary text */
 
-    /* ===== Primary Accent (Purple from Logo) ===== */
-    --cor-primaria: #C72BFF;
-    /* Bright Tech Purple */
-    --cor-primaria-hover: #A015DB;
-    /* Deeper purple for hovers */
-    --cor-primaria-light: rgba(199, 43, 255, 0.1);
+    /* ===== Primary Accent (Premium Tech Purple) ===== */
+    --cor-primaria: #6C23A3;
+    /* Elegant, deeper tech purple */
+    --cor-primaria-hover: #561985;
+    /* Even deeper hover */
+    --cor-primaria-light: rgba(108, 35, 163, 0.08);
     /* Soft purple glow */
 
     /* ===== Secondary Accent (Dark Gray) ===== */
@@ -33,20 +33,20 @@
     --cor-secundaria-light: rgba(29, 29, 31, 0.05);
 
     /* ===== Utility Colors ===== */
-    --cor-border: #D2D2D7;
-    /* Apple subtle border */
+    --cor-border: rgba(0, 0, 0, 0.08);
+    /* Very subtle border line */
     --cor-overlay: rgba(255, 255, 255, 0.85);
 
     /* ===== Gradients ===== */
-    --gradient-primary: linear-gradient(135deg, #FF2BEE 0%, #C72BFF 100%);
+    --gradient-primary: linear-gradient(135deg, #9D3FCC 0%, #6C23A3 100%);
     --gradient-background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F7 100%);
-    --gradient-hero: radial-gradient(circle at 50% 50%, rgba(199, 43, 255, 0.05) 0%, transparent 60%);
+    --gradient-hero: radial-gradient(circle at 50% 50%, rgba(108, 35, 163, 0.05) 0%, transparent 60%);
 
-    /* ===== Shadows (Apple style, very subtle) ===== */
-    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.04);
-    --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-heavy: 0 10px 40px rgba(0, 0, 0, 0.12);
-    --shadow-purple: 0 8px 24px rgba(199, 43, 255, 0.25);
+    /* ===== Shadows (Apple style, subtle) ===== */
+    --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.06);
+    --shadow-heavy: 0 8px 32px rgba(0, 0, 0, 0.1);
+    --shadow-purple: 0 8px 24px rgba(108, 35, 163, 0.2);
     --shadow-blue: var(--shadow-medium);
     /* Kept for compatibility */
 
