@@ -4,21 +4,13 @@
 .hero-section {
     padding: 120px 0 160px;
     text-align: center;
-    background: radial-gradient(circle at 50% 100%, var(--cor-fundo-terciario) 0%, var(--cor-fundo) 100%);
+    background: var(--cor-fundo);
     position: relative;
     overflow: hidden;
 }
 
 .hero-section::after {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200%;
-    height: 300px;
-    background: radial-gradient(ellipse at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
-    z-index: 1;
+    display: none;
 }
 
 .hero-content {
@@ -29,17 +21,15 @@
 
 .hero-section h1 {
     font-size: 4rem;
-    line-height: 1.1;
+    line-height: 1.05;
     margin-bottom: 2rem;
-    background: linear-gradient(135deg, #FFF 0%, var(--cor-texto-secundario) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--cor-texto-principal);
+    letter-spacing: -0.03em;
 }
 
 .hero-description {
     font-size: 1.25rem;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 3.5rem;
     max-width: 800px;
     margin-left: auto;
@@ -83,37 +73,37 @@
 
 .solution-card-revamped {
     background: var(--cor-fundo-secundario);
-    backdrop-filter: blur(10px);
     border-radius: 24px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--cor-border);
+    border: none;
     transition: var(--transition);
 }
 
 .solution-card-revamped:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: var(--cor-primaria);
-    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: var(--shadow-medium);
 }
 
 .solution-card-revamped .card-image {
     width: 100%;
     height: 280px;
     overflow: hidden;
-    border-bottom: 1px solid var(--cor-border);
+    background: #E5E5EA;
+    /* Subtle gray inside image placeholder */
 }
 
 .solution-card-revamped .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .solution-card-revamped:hover .card-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    /* Softer scale than before */
 }
 
 .solution-card-revamped .card-content {
@@ -125,22 +115,23 @@
 
 .solution-card-revamped .card-category {
     font-size: 0.85rem;
-    font-weight: 800;
-    color: var(--cor-primaria);
+    font-weight: 700;
+    color: var(--cor-texto-secundario);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
 }
 
 .solution-card-revamped h3 {
     font-size: 1.8rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     color: var(--cor-texto-principal);
+    letter-spacing: -0.01em;
 }
 
 .solution-card-revamped p {
     color: var(--cor-texto-secundario);
-    line-height: 1.7;
+    line-height: 1.6;
     margin-bottom: 2rem;
     font-size: 1.05rem;
 }

@@ -2,16 +2,19 @@
 
 /* BOTÕES */
 .btn {
-    display: inline-block;
-    padding: 0.875rem 1.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.8rem;
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: 980px;
+    /* Apple-style pill buttons */
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.95rem;
     text-align: center;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -19,47 +22,45 @@
 
 .btn-primary {
     background: var(--cor-primaria);
-    color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
 }
 
 .btn.lg {
-    font-size: 1.25rem;
-    padding: 1.25rem 2.5rem;
+    font-size: 1.1rem;
+    padding: 1rem 2.2rem;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
     background: var(--cor-primaria-hover);
 }
 
 .btn-secondary {
-    background-color: transparent;
+    background-color: var(--cor-fundo-secundario);
     color: var(--cor-texto-principal);
-    border: 2px solid var(--cor-secundaria);
+    border: 1px solid var(--cor-border);
 }
 
 .btn-secondary:hover {
-    background-color: var(--cor-secundaria);
-    border-color: var(--cor-secundaria-hover);
-    transform: translateY(-2px);
-    color: white;
+    background-color: #E5E5EA;
+    /* Darker subtle gray on hover */
+    border-color: #D2D2D7;
+    transform: scale(1.02);
+    color: var(--cor-texto-principal);
 }
 
 /* CARDS GENÉRICOS */
 .card-base {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-fundo-secundario);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow-light);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(107, 114, 128, 0.2);
+    box-shadow: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    border: none;
 }
 
 .card-base:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    border-color: var(--cor-primaria);
+    box-shadow: var(--shadow-medium);
 }
 
 /* FORMULÁRIO DE CONTATO */

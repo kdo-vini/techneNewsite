@@ -1,85 +1,81 @@
 /* ========== TÉCHNE - CENTRALIZED COLOR SYSTEM ========== */
-/* Modern Tech Palette: Dark Blue + Magenta */
+/* Modern Tech Palette: Minimalist Apple White + Tech Purple */
 /* Import this file in all other stylesheets for consistent theming */
 
 :root {
     /* ===== Background Colors ===== */
-    --cor-fundo: #0A0E27;
-    /* Deep navy - primary background */
-    --cor-fundo-secundario: #141B3D;
-    /* Rich dark blue - secondary surfaces */
-    --cor-fundo-terciario: #1E2749;
-    /* Elevated surfaces, cards */
+    --cor-fundo: #FFFFFF;
+    /* Clean white - primary background */
+    --cor-fundo-secundario: #F5F5F7;
+    /* Apple gray - secondary backgrounds (cards/sections) */
+    --cor-fundo-terciario: #E5E5EA;
+    /* Slightly darker gray for borders/dividers or deeper cards */
 
     /* ===== Text Colors ===== */
-    --cor-texto-principal: #F8FAFC;
-    /* Crisp white - primary text */
-    --cor-texto-secundario: #CBD5E1;
-    /* Soft gray-blue - secondary text */
+    --cor-texto-principal: #1D1D1F;
+    /* Apple pure black/dark gray - primary text */
+    --cor-texto-secundario: #86868B;
+    /* Apple light gray - secondary/muted text */
 
-    /* ===== Primary Accent (Blue) ===== */
-    --cor-primaria: #3B82F6;
-    /*  tech blue - main CTAs */
-    --cor-primaria-hover: #2359b1;
-    /* Deeper blue - hover states */
-    --cor-primaria-light: rgba(59, 130, 246, 0.1);
-    /* Magenta glow/background */
+    /* ===== Primary Accent (Purple from Logo) ===== */
+    --cor-primaria: #C72BFF;
+    /* Bright Tech Purple */
+    --cor-primaria-hover: #A015DB;
+    /* Deeper purple for hovers */
+    --cor-primaria-light: rgba(199, 43, 255, 0.1);
+    /* Soft purple glow */
 
-    /* ===== Secondary Accent (Magenta) ===== */
-    --cor-secundaria: #5c1374;
-    /* Bright blue - secondary accents */
-    --cor-secundaria-hover: #4b115f;
-    /* Deeper magenta - hover states */
-    --cor-secundaria-light: rgba(152, 22, 179, 0.1);
-    /* Blue glow/background */
+    /* ===== Secondary Accent (Dark Gray) ===== */
+    --cor-secundaria: #1D1D1F;
+    /* Used for dark mode-like accents or strong contrast buttons */
+    --cor-secundaria-hover: #000000;
+    /* Jet black hover */
+    --cor-secundaria-light: rgba(29, 29, 31, 0.05);
 
     /* ===== Utility Colors ===== */
-    --cor-border: rgba(203, 213, 225, 0.1);
-    /* Subtle borders */
-    --cor-overlay: rgba(10, 14, 39, 0.95);
-    /* Dark overlay for modals */
+    --cor-border: #D2D2D7;
+    /* Apple subtle border */
+    --cor-overlay: rgba(255, 255, 255, 0.85);
 
     /* ===== Gradients ===== */
-    --gradient-primary: linear-gradient(135deg, #E91E8C 0%, #3B82F6 100%);
-    --gradient-background: linear-gradient(135deg, var(--cor-fundo) 0%, var(--cor-fundo-secundario) 100%);
-    --gradient-hero: radial-gradient(circle at 50% 50%, rgba(233, 30, 140, 0.15) 0%, transparent 50%);
+    --gradient-primary: linear-gradient(135deg, #FF2BEE 0%, #C72BFF 100%);
+    --gradient-background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F7 100%);
+    --gradient-hero: radial-gradient(circle at 50% 50%, rgba(199, 43, 255, 0.05) 0%, transparent 60%);
 
-    /* ===== Shadows ===== */
-    --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
-    --shadow-heavy: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    --shadow-magenta: 0 10px 30px rgba(233, 30, 140, 0.3);
-    --shadow-blue: 0 10px 30px rgba(59, 130, 246, 0.3);
+    /* ===== Shadows (Apple style, very subtle) ===== */
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.04);
+    --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-heavy: 0 10px 40px rgba(0, 0, 0, 0.12);
+    --shadow-purple: 0 8px 24px rgba(199, 43, 255, 0.25);
+    --shadow-blue: var(--shadow-medium);
+    /* Kept for compatibility */
 
     /* ===== Design Tokens ===== */
-    --border-radius: 12px;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --border-radius: 20px;
+    /* Classic Apple soft rounded corners */
+    --transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Faster, smoother ease-out */
 }
 
 /* ===== Color Usage Guidelines ===== */
 /*
 BACKGROUNDS:
-- Use --cor-fundo for main page background
-- Use --cor-fundo-secundario for sections, alternating backgrounds
-- Use --cor-fundo-terciario for cards, elevated elements
+- Use --cor-fundo for main page background (White)
+- Use --cor-fundo-secundario for sections to stand out or card backgrounds (Light Gray)
+- Use --cor-fundo-terciario for subtle dividers
 
 TEXT:
-- Use --cor-texto-principal for headings and important text
-- Use --cor-texto-secundario for body text and descriptions
+- Use --cor-texto-principal for headings and important text (Dark Gray)
+- Use --cor-texto-secundario for body text and descriptions (Light muted gray)
 
 ACCENTS:
-- Use --cor-primaria (magenta) for primary CTAs, important buttons
-- Use --cor-secundaria (blue) for secondary actions, links, icons
-- Use gradients for special hero sections or featured elements
+- Use --cor-primaria (Purple) for primary CTAs, main buttons.
+- Use --cor-secundaria (Dark Gray) for secondary actions or contrasting UI elements.
 
 HOVER STATES:
 - Always use the corresponding -hover variant
-- Add transform: translateY(-2px) for lift effect
-- Combine with shadow effects for depth
+- Very subtle hover transforms (e.g., scale(1.02))
 
 ACCESSIBILITY:
-- All color combinations meet WCAG AA contrast standards
-- Magenta (#E91E8C) on dark backgrounds: 4.8:1 ratio
-- Blue (#3B82F6) on dark backgrounds: 5.2:1 ratio
-- White text on dark backgrounds: 15.8:1 ratio
+- All color combinations map appropriately to a light/high-contrast layout.
 */

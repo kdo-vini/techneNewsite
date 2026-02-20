@@ -1,7 +1,7 @@
 /* ========== PÁGINA SOBRE ========== */
 
 .about-section {
-    background: linear-gradient(135deg, var(--cor-fundo) 0%, rgba(31, 41, 55, 0.8) 100%);
+    background: var(--cor-fundo-secundario);
 }
 
 .about-content {

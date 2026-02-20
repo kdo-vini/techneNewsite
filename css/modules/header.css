@@ -10,9 +10,10 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(10, 14, 39, 0.85);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--cor-border);
+    background-color: rgba(29, 29, 31, 0.85);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem 0;
     transition: padding 0.3s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
 }
@@ -35,7 +36,7 @@ header .container {
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    color: var(--cor-texto-principal);
+    color: #F5F5F7;
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -70,8 +71,9 @@ header .container {
 .dropdown-toggle {
     background: none;
     border: none;
-    color: var(--cor-texto-secundario, #fff);
+    color: rgba(255, 255, 255, 0.8);
     font: inherit;
+    font-size: 0.95rem;
     font-weight: 500;
     cursor: pointer;
     display: flex;
@@ -82,7 +84,8 @@ header .container {
 }
 
 .dropdown-toggle:focus {
-    outline: 2px solid var(--cor-primaria, #3B82F6);
+    outline: none;
+    color: #FFFFFF;
 }
 
 .dropdown-arrow {
@@ -98,9 +101,11 @@ header .container {
     left: 0;
     top: 110%;
     min-width: 220px;
-    background: var(--cor-fundo-secundario);
-    border-radius: var(--border-radius, 12px);
-    box-shadow: var(--shadow-light, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+    background: rgba(29, 29, 31, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.25s, transform 0.25s;
@@ -115,16 +120,17 @@ header .container {
 .submenu a {
     display: block;
     padding: 0.75rem 1.5rem;
-    color: var(--cor-texto-principal, #fff);
+    color: #F5F5F7;
     text-decoration: none;
+    font-size: 0.9rem;
     font-weight: 500;
     transition: background 0.2s, color 0.2s;
 }
 
 .submenu a:hover,
 .submenu a:focus {
-    background: var(--cor-primaria, #3B82F6);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
 }
 
 /* --- DESKTOP: Hover para abrir dropdown --- */
@@ -170,8 +176,9 @@ header .container {
         position: static;
         min-width: 0;
         box-shadow: none;
+        border: none;
         border-radius: 0;
-        background: var(--cor-fundo-secundario);
+        background: transparent;
         padding: 0;
         margin: 0;
         opacity: 1;
@@ -200,30 +207,16 @@ nav ul {
 }
 
 nav a {
-    color: var(--cor-texto-secundario);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
+    font-size: 0.95rem;
     font-weight: 500;
     transition: var(--transition);
     position: relative;
 }
 
 nav a:hover {
-    color: var(--cor-primaria);
-}
-
-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--cor-primaria);
-    transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-    width: 100%;
+    color: #FFFFFF;
 }
 
 .header-cta {
@@ -246,10 +239,10 @@ nav a:hover::after {
 
 .hamburger-line {
     width: 25px;
-    height: 3px;
-    background-color: var(--cor-texto-principal);
+    height: 2px;
+    background-color: #F5F5F7;
     transition: var(--transition);
-    margin: 2px 0;
+    margin: 2.5px 0;
 }
 
 /* ========== MENU MOBILE ========== */
