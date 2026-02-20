@@ -19,6 +19,19 @@
     animation: fadeInUp 0.8s ease-out;
 }
 
+.hero-badge {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--cor-primaria-light);
+    color: var(--cor-primaria);
+    border-radius: 980px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+}
+
 .hero-section h1 {
     font-size: 4rem;
     line-height: 1.05;
@@ -41,6 +54,9 @@
 .solutions-section-revamped {
     padding: 120px 0;
     position: relative;
+    background-color: var(--cor-fundo-secundario);
+    border-top: 1px solid var(--cor-border);
+    border-bottom: 1px solid var(--cor-border);
 }
 
 .solutions-category {
@@ -169,4 +185,14 @@
     .solution-card-revamped .card-image {
         height: 220px;
     }
+}
+
+/* Específico para o Card em fundo secundário */
+.solutions-section-revamped .solution-card-revamped {
+    background-color: var(--cor-fundo);
+    box-shadow: var(--shadow-light);
+}
+
+.solutions-section-revamped .solution-card-revamped:hover {
+    box-shadow: var(--shadow-medium);
 }

@@ -64,6 +64,12 @@
 }
 
 /* FORMULÁRIO DE CONTATO */
+.contact-section {
+    background-color: var(--cor-fundo-secundario);
+    border-top: 1px solid var(--cor-border);
+    padding: 100px 0;
+}
+
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
