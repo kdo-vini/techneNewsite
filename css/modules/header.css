@@ -251,7 +251,7 @@ nav a:hover {
 }
 
 /* ========== MENU MOBILE ========== */
-.menu-aberto nav {
+.menu-aberto #header-placeholder nav {
     display: flex;
     position: fixed;
     top: 0;
@@ -266,20 +266,20 @@ nav a:hover {
     align-items: center;
 }
 
-.menu-aberto nav ul {
+.menu-aberto #header-placeholder nav ul {
     flex-direction: column;
     gap: 2.5rem;
     text-align: center;
 }
 
-.menu-aberto nav a,
-.menu-aberto nav .dropdown-toggle {
+.menu-aberto #header-placeholder nav a,
+.menu-aberto #header-placeholder nav .dropdown-toggle {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-texto-principal);
 }
 
-.menu-aberto nav .submenu a {
+.menu-aberto #header-placeholder nav .submenu a {
     font-size: 1.2rem;
     font-weight: 500;
     color: var(--cor-texto-secundario);

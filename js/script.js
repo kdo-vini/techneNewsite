@@ -15,7 +15,7 @@ function initUI() {
     const body = document.body;
     const header = document.getElementById('header-placeholder');
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    const nav = document.querySelector('nav');
+    const nav = header ? header.querySelector('nav') : null;
 
     if (mobileToggle) {
         mobileToggle.addEventListener('click', () => {
@@ -55,17 +55,28 @@ function initUI() {
     }, { passive: true });
 
     // Smooth Scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            const target = document.querySelector(this.getAttribute('href'));
+            const href = this.getAttribute('href');
+            const targetId = href.split('#')[1];
+            if (!targetId) return;
+
+            const target = document.getElementById(targetId);
             if (target) {
                 e.preventDefault();
-                body.classList.remove('menu-aberto');
-                body.style.overflow = '';
+
+                // Fecha menu mobile se estiver aberto
+                if (body.classList.contains('menu-aberto')) {
+                    body.classList.remove('menu-aberto');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    body.style.overflow = '';
+                }
 
                 const headerHeight = header?.offsetHeight || 0;
+                const offset = targetId === 'contato' ? 100 : headerHeight + 20;
+
                 window.scrollTo({
-                    top: target.offsetTop - headerHeight - 20,
+                    top: target.offsetTop - offset,
                     behavior: 'smooth'
                 });
             }
