@@ -49,4 +49,4 @@ Acesse: `http://localhost:8000`
 ## 📧 Contato
 - **Email:** techne.br@gmail.com
 - **Site:** https://techneia.com.br
-- **WhatsApp:** (14) 99153-7503
+- **WhatsApp:** (14) 99700-0091
